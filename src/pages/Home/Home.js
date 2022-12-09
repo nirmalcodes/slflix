@@ -6,13 +6,18 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="w-full h-screen sm:h-[85vh] bg-sky-600 relative text-white">
+      <div className="w-full h-screen sm:h-[90vh] bg-sky-600 relative text-white">
         <div className="w-full h-full">
           <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-r from-black" />
-          <img
+          <img 
             src="https://image.tmdb.org/t/p/original/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg"
             alt="backdrop-poster"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-top hidden sm:block"
+          />
+          <img
+            src="https://image.tmdb.org/t/p/original/3zXceNTtyj5FLjwQXuPvLYK5YYL.jpg"
+            alt="backdrop-poster"
+            className="w-full h-full object-cover object-top sm:hidden"
           />
         </div>
       </div>
