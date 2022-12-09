@@ -6,9 +6,9 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="w-full h-screen sm:h-[90vh] bg-sky-600 relative text-white">
+      <div className="w-full h-[100vh] sm:h-[90vh] bg-sky-600 relative text-white">
         <div className="w-full h-full">
-          <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-r from-black" />
+          <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-t from-black sm:bg-gradient-to-r sm:from-black" />
           <img 
             src="https://image.tmdb.org/t/p/original/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg"
             alt="backdrop-poster"
@@ -17,7 +17,7 @@ const Home = () => {
           <img
             src="https://image.tmdb.org/t/p/original/3zXceNTtyj5FLjwQXuPvLYK5YYL.jpg"
             alt="backdrop-poster"
-            className="w-full h-full object-cover object-top sm:hidden"
+            className="w-full h-full object-cover object-center sm:hidden"
           />
         </div>
       </div>
