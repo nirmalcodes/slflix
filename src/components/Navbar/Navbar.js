@@ -9,7 +9,7 @@ import {
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar fixed">
       <Link to="/" className="navbar__brand text-red-600">
         SLflix
       </Link>
