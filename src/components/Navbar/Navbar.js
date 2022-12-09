@@ -1,43 +1,48 @@
+import { Menu } from "@headlessui/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import FilmOutline from "../Icons/FilmOutline";
-import HomeOutline from "../Icons/HomeOutline";
-import NewsPaperOutline from "../Icons/NewsPaperOutline";
-import TvOutline from "../Icons/TvOutline";
+// import UserCircleOutline from "../Icons/UserCircleOutline";
+// import ChevronDown from "../Icons/ChevronDown";
+import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const Navbar = () => {
   return (
-    <nav className="relative flex h-14 px-4 py-2 items-center justify-between bg-orange-300">
-      <h1 className="text-red-600 text-2xl font-bold cursor-pointer mr-4 py-1">
+    <nav className="navbar">
+      <Link to="/" className="navbar__brand text-red-600">
         SLflix
-      </h1>
+      </Link>
 
-      <ul className="flex text-white">
-        <li className="">
-          <Link to="/">
-            <HomeOutline />
-            HOME
-          </Link>
-        </li>
-        <li className="">
-          <Link to="/">
-            <FilmOutline />
-            MOVIE
-          </Link>
-        </li>
-        <li className="">
-          <Link to="/">
-            <TvOutline />
-            TV
-          </Link>
-        </li>
-        <li className="">
-          <Link to="/">
-            <NewsPaperOutline />
-            NEWS
-          </Link>
-        </li>
-      </ul>
+      <Menu as="div" className="relative">
+        <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
+          Profile
+          <ChevronDownIcon className=""/>
+          </Menu.Button>
+        <Menu.Items>
+          <Menu.Item>
+            {({ active }) => (
+              <a
+                className={`${active && "bg-blue-500"}`}
+                href="/account-settings"
+              >
+                Account settings
+              </a>
+            )}
+          </Menu.Item>
+          <Menu.Item>
+            {({ active }) => (
+              <a
+                className={`${active && "bg-blue-500"}`}
+                href="/account-settings"
+              >
+                Documentation
+              </a>
+            )}
+          </Menu.Item>
+          <Menu.Item disabled>
+            <span className="opacity-75">Invite a friend (coming soon!)</span>
+          </Menu.Item>
+        </Menu.Items>
+      </Menu>  
     </nav>
   );
 };
