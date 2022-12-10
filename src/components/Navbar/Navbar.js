@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 right-0 left-0 z-[1000] flex w-full items-center justify-between py-2 px-4">
+    <div className="fixed top-0 right-0 left-0 z-[1000] flex w-full items-center justify-between bg-gradient-to-b from-black py-2 px-4 sm:from-transparent">
       <h1 className="mr-4 cursor-pointer py-1 text-3xl font-bold text-red-600 sm:text-4xl">
         SLflix
       </h1>
