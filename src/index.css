@@ -7,13 +7,3 @@
 html {
   font-family: "Ubuntu", sans-serif;
 }
-
-@layer components {
-  .navbar {
-    @apply relative flex w-full h-14 sm:h-24 px-4 py-2 items-center justify-between  z-[1000];
-  }
-
-  .navbar__brand {
-    @apply text-white text-2xl sm:text-3xl font-bold cursor-pointer mr-4 py-1;
-  }
-}

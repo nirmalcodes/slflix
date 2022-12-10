@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <div className="relative">
+    <div className="bg-slate-800">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

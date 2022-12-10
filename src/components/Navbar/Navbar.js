@@ -1,23 +1,17 @@
-import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
-import { Menu, Transition } from "@headlessui/react";
-import {
-  ArrowRightOnRectangleIcon,
-  ChevronDownIcon,
-  UserCircleIcon,
-} from "@heroicons/react/20/solid";
+import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar fixed">
-      <Link to="/" className="navbar__brand text-red-600">
+    <div className="fixed top-0 right-0 left-0 z-[1000] flex w-full items-center justify-between py-2 px-4">
+      <h1 className="mr-4 cursor-pointer py-1 text-3xl font-bold text-red-600 sm:text-4xl">
         SLflix
-      </Link>
-
-      <div className="py-1">
-        <img src="https://api.lorem.space/image/face?w=150&h=150" alt="user-avatar" className="h-9 w-9 sm:h-12 sm:w-12 rounded-full object-cover" />
+      </h1>
+      <div className="">
+        <button className="rounded bg-red-600 py-2 px-4 text-white">
+          Sign In
+        </button>
       </div>
-    </nav>
+    </div>
   );
 };
 
