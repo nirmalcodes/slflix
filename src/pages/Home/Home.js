@@ -19,9 +19,9 @@ const Home = () => {
   console.log("random movie ", movie);
 
   return (
-    <div className="h-[80vh] w-full select-none text-white sm:h-[75vh]">
+    <div className="h-[85vh] w-full select-none text-white sm:h-[75vh]">
       <div className="h-full w-full">
-        <div className="absolute h-[80vh] w-full bg-gradient-to-t from-black sm:h-[75vh] sm:bg-gradient-to-r"></div>
+        <div className="absolute h-[85vh] w-full bg-gradient-to-t from-black sm:h-[75vh] sm:bg-gradient-to-r"></div>
         <img
           className="hidden h-full w-full object-cover object-top sm:block"
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
