@@ -6,7 +6,7 @@ const Navbar = () => {
       <h1 className="mr-4 cursor-pointer py-1 text-3xl font-bold text-red-600 sm:text-4xl">
         SLflix
       </h1>
-      <div className="">
+      <div className="hidden">
         <button className="rounded bg-red-600 py-2 px-4 text-white">
           Sign In
         </button>
